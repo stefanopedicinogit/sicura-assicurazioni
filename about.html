@@ -251,7 +251,7 @@
     <!-- Facts End -->
 
 
-    <!-- Team Start -->
+    <!-- Team Start
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto" style="max-width: 500px;">
@@ -280,8 +280,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Team Start
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item rounded">
                             <img class="img-fluid" src="img/team-2.jpg" alt="">
@@ -342,7 +340,6 @@
                 </div>
             </div>
         </div>Team End -->
-    <!-- Team End -->
 
     <!-- Biografia Start -->
     <div class="container-xxl py-5">
@@ -369,15 +366,10 @@
     <!-- Carousel Start -->
     <div style="background-color: #15233C;" class="container-fluid mt-6 py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
-            <div class="owl-carousel client-carousel">
-                <a href="#"><img height="140px" width="50px" src="img/logo-1.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-2.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-3.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-4.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-5.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-6.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-7.png" alt=""></a>
-                <a href="#"><img height="140px" width="50px" src="img/logo-8.png" alt=""></a>
+            <div class="owl-carousel client-carousel" data-items="3">
+                <a href="#"><img height="140px" width="50px" src="img/cattolica-assicurazioni.png" alt="Cattolica Assicurazioni Logo"></a>
+                <a href="#"><img height="140px" width="50px" src="img/generali-assicurazioni.png" alt="Generali Assicurazioni Logo"></a>
+                <a href="#"><img height="140px" width="50px" src="img/unipol-assicurazioni.svg" alt="Unipol Assicurazioni Logo"></a>
             </div>
         </div>
     </div>
@@ -446,26 +438,17 @@
 
     <!-- Owl Carousel Initialization -->
     <script>
-        $(document).ready(function () {
-            $('.client-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            });
+        $(document).ready(function() {
+          $('.client-carousel').owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+          });
         });
-    </script>
+      </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
